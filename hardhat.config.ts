@@ -25,16 +25,6 @@ const config: HardhatUserConfig = {
             chainId: 84532, // Base Sepolia chain ID
             accounts: [process.env.PRIVATE_KEY!], // Deployer's private key
         },
-        sepolia: {
-            url: process.env.RPC_URL_SEPOLIA, // Sepolia RPC URL
-            chainId: 11155111, // Sepolia chain ID
-            accounts: [process.env.PRIVATE_KEY!], // Deployer's private key
-        },
-        polygonAmoy: {
-            url: process.env.RPC_URL_POLYGON_AMOY, // Arbitrum Sepolia RPC URL
-            chainId: 80002, // Polygon Amoy chain ID
-            accounts: [process.env.PRIVATE_KEY!], // Deployer's private key
-        },
     },
     etherscan: {
         apiKey: process.env.ETHERSCAN_API_KEY, // Etherscan API key
@@ -83,6 +73,8 @@ const config: HardhatUserConfig = {
     },
     paths: {
         sources: "./src",
+
+
     },
 }
 

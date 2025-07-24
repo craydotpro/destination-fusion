@@ -1,3 +1,0 @@
-[submodule "src/cray"]
-	path = src/cray
-	url = git@github.com:craydotpro/contracts.git

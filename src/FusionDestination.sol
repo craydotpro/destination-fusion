@@ -8,10 +8,10 @@ import {
   FullFillCrayOrderInput,
   InitiateArgs,
   DestinationAction
-} from "./cray/src/interfaces/CrayStructs.sol";
-import { CrayGateway } from "./cray/src/CrayGateway.sol";
-import { CrayOrderVerifier } from "./cray/src/CrayOrderVerifier.sol";
-import { CrayOrderLib } from "./cray/src/lib/CrayOrderLib.sol";
+} from "cray/src/interfaces/CrayStructs.sol";
+import { CrayGateway } from "cray/src/CrayGateway.sol";
+import { CrayOrderVerifier } from "cray/src/CrayOrderVerifier.sol";
+import { CrayOrderLib } from "cray/src/lib/CrayOrderLib.sol";
 import { ERC20 } from "solmate/src/tokens/ERC20.sol";
 import { SafeTransferLib } from "solmate/src/utils/SafeTransferLib.sol";
 

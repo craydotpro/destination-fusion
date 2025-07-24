@@ -12,6 +12,7 @@
         "@nomiclabs/hardhat-etherscan": "^3.1.8",
         "@openzeppelin/contracts": "^5.3.0",
         "@uniswap/permit2": "github:uniswap/permit2",
+        "cray": "github:craydotpro/contracts",
         "dotenv": "^16.4.7",
         "ethers": "^5.7.2",
         "fs-extra": "^11.3.0",
