@@ -199,8 +199,7 @@ export const approveAllowance = (
     )
 }
 
-export function getCraySignOnOrder(wallet: any, orderHash: any) {
-    const solverAddress = wallet.account?.address!
+export function getCraySignOnOrder(wallet: any, solverAddress: any, orderHash: any) {
     const message = keccak256(encodeAbiParameters([{ type: "bytes32" }, { type: "address" }], [orderHash, solverAddress]))
     return wallet.signMessage({ message: { raw: message as Hex } })
 }
