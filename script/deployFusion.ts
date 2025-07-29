@@ -42,10 +42,11 @@ async function main() {
   console.log('FusionDestination deployed at:', gateway.address)
 
 
-
   // Verify Contracts
-  
-  await verifyContract(gateway.address, [
+  const CRAY_FUSION_KEY = 'FusionDestination'
+
+  const gatewayAddress = deployments[CRAY_FUSION_KEY]
+  await verifyContract(gatewayAddress, [
     verifierAddress,
     signerAddress,
     ethers.constants.AddressZero
