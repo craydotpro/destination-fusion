@@ -25,6 +25,12 @@ const config: HardhatUserConfig = {
             chainId: 84532, // Base Sepolia chain ID
             accounts: [process.env.PRIVATE_KEY!], // Deployer's private key
         },
+        // Mainnet networks
+        base: {
+            url: process.env.RPC_URL_BASE, // Base Mainnet RPC URL
+            chainId: 8453, // Base Mainnet chain ID
+            accounts: [process.env.PRIVATE_KEY!], // Deployer's private key
+        }
     },
     etherscan: {
         apiKey: process.env.ETHERSCAN_API_KEY, // Etherscan API key
